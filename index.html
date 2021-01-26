@@ -136,7 +136,7 @@
 					<section id="contact">
 						<div class="inner">
 							<section>
-								<form method="post" action="mailthis.to/contact@indy.digital" method="POST" onsubmit="location.href='thankyou.html'">
+								<form method="post" action="mailthis.to/contact@indy.digital" method="POST">
 									<div class="fields">
 										<div class="field half">
 											<label for="name">Name</label>
@@ -150,6 +150,12 @@
 											<label for="message">Message</label>
 											<textarea name="message" id="message" rows="6"></textarea>
 										</div>
+										<!-- Redirect to a page after recaptcha -->
+										<input type="hidden" name="_after" value="thankyou.html">
+										<!-- Honeypot (to catch comment spam bots) -->
+										<input type="hidden" name="_honeypot" value="">
+										<!-- Apply a custom confirmation message on the second step -->
+										<input type="hidden" name="_confirmation" value="Your submission was successful. We will be in touch!">
 									</div>
 									<ul class="actions">
 										<li><input type="submit" value="Send Message" class="primary" /></li>
