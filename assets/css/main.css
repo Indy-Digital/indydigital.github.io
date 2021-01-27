@@ -33,21 +33,38 @@ body {
 	line-height: 1;
 }
 
-.typing > *{
-  overflow: hidden;
-  white-space: nowrap;
-  animation: typingAnim 5s steps(50);
+.typingEffect {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  top: 25%;
 }
 
-@keyframes typingAnim{
-  from { width: 0 }
-  to { width: 100% }
+.typingEffect h3 {
+  position: relative;
+  color: #152860;
+  line-height:normal;
+  text-align: center;
+  white-space: nowrap;
+  font-size: 40px;
+  letter-spacing: 0.0625em;
+  width: calc(20ch + 20*0.0625em);
 }
-@keyframes typingSpeak{
-  0% { width: 1em; height: .1em }
-  100% { width: 1em; height: .5em; }
+
+.typingEffect h3:after {
+  display: block;
+  position: absolute;
+  content: '';
+  width: calc(20ch + 20*0.0625em);
+  height: 2ex;
+  left: 0;
+  top: 0;
+  background: #eff5ed;
+  animation: 0.6s blink 20, move 3s 1.5s forwards steps(1);
+  border-left: 1px solid #152860;
+  box-shadow: 0px 1ex 0px 0px #eff5ed;
 }
-***
 
 ol, ul {
 	list-style: none;
