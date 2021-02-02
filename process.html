@@ -17,8 +17,8 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="shortcut icon" type="image/png" href="images/INDY.png" />
-		<link rel="apple-touch-icon" type="image/png" href="images/INDY.png" />
+		<link rel="shortcut icon" type="image/png" href="images/favicon.png" />
+		<link rel="apple-touch-icon" type="image/png" href="images/logo.png" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
@@ -159,19 +159,20 @@
 						<section id="contact">
 							<div class="inner">
 								<section>
-									<form method="post" action="https://formspree.io/f/mknpyerg" method="POST" encType="multipart/form-data">
+									<h2>Contact Us</h2>
+									<form method="post" action="https://formspree.io/f/mknpyerg" encType="multipart/form-data">
 										<div class="fields">
 											<div class="field half">
 												<label for="name">Name</label>
-												<input type="text" name="name" id="name" />
+												<input type="text" name="name" id="name" required/>
 											</div>
 											<div class="field half">
 												<label for="email">Email</label>
-												<input type="text" name="email" id="email" />
+												<input type="text" name="email" id="email" required/>
 											</div>
 											<div class="field">
 												<label for="message">Message</label>
-												<textarea name="message" id="message" rows="6"></textarea>
+												<textarea name="message" id="message" rows="6" required></textarea>
 											</div>
 										</div>
 										<ul class="actions">
@@ -209,6 +210,7 @@
 					<!-- Footer -->
 						<footer id="footer">
 							<div class="inner">
+								<section>
 								<ul class="icons">
 									<li><a href="https://twitter.com/digital_indy" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
 									<li><a href="https://fb.me/indydigitalmarketing" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
@@ -218,6 +220,7 @@
 								<ul class="copyright">
 									<li>&copy; Indy Digital</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
 								</ul>
+							</section>
 							</div>
 						</footer>
 
@@ -232,7 +235,7 @@
 				<script src="assets/js/util.js"></script>
 				<script src="assets/js/main.js"></script>
 				<!-- Start of HubSpot Embed Code -->
-					<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/9299123.js"></script>
+				  <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/9299123.js"></script>
 				<!-- End of HubSpot Embed Code -->
 		</body>
-		</html>
+	</html>

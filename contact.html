@@ -17,8 +17,8 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
-		<link rel="shortcut icon" type="image/png" href="images/INDY.png" />
-		<link rel="apple-touch-icon" type="image/png" href="images/INDY.png" />
+		<link rel="shortcut icon" type="image/png" href="images/favicon.png" />
+		<link rel="apple-touch-icon" type="image/png" href="images/logo.png" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 	</head>
 	<body class="is-preload">
@@ -78,84 +78,87 @@
 								</div>
 							</section>
 
-					<!-- Contact -->
-						<section id="contact">
-							<div class="inner">
-								<section>
-									<form method="post" action="https://formspree.io/f/mknpyerg" method="POST" encType="multipart/form-data">
-										<div class="fields">
-											<div class="field half">
-												<label for="name">Name</label>
-												<input type="text" name="name" id="name" />
-											</div>
-											<div class="field half">
-												<label for="email">Email</label>
-												<input type="text" name="email" id="email" />
-											</div>
-											<div class="field">
-												<label for="message">Message</label>
-												<textarea name="message" id="message" rows="6"></textarea>
-											</div>
-										</div>
-										<ul class="actions">
-											<li><input type="submit" value="Send Message" class="primary" /></li>
-											<li><input type="reset" value="Clear" /></li>
+							<!-- Contact -->
+								<section id="contact">
+									<div class="inner">
+										<section>
+											<h2>Contact Us</h2>
+											<form method="post" action="https://formspree.io/f/mknpyerg" encType="multipart/form-data">
+												<div class="fields">
+													<div class="field half">
+														<label for="name">Name</label>
+														<input type="text" name="name" id="name" required/>
+													</div>
+													<div class="field half">
+														<label for="email">Email</label>
+														<input type="text" name="email" id="email" required/>
+													</div>
+													<div class="field">
+														<label for="message">Message</label>
+														<textarea name="message" id="message" rows="6" required></textarea>
+													</div>
+												</div>
+												<ul class="actions">
+													<li><input type="submit" value="Send Message" class="primary" /></li>
+													<li><input type="reset" value="Clear" /></li>
+												</ul>
+											</form>
+										</section>
+										<section class="split">
+											<section>
+												<div class="contact-method">
+													<span class="icon solid alt fa-envelope"></span>
+													<h3>Email</h3>
+													<a href="mailto: contact@indy.digital">contact@indy.digital</a>
+												</div>
+											</section>
+											<section>
+												<div class="contact-method">
+													<span class="icon solid alt fa-phone"></span>
+													<h3>Phone</h3>
+													<a href="sms: 3173504544">(317) 350-4544</a>
+												</div>
+											</section>
+											<section>
+												<div class="contact-method">
+													<span class="icon solid alt fa-home"></span>
+													<h3>Address</h3>
+													<span>540 Westfield Rd, Noblesville, IN 46060</span>
+												</div>
+											</section>
+										</section>
+									</div>
+								</section>
+
+							<!-- Footer -->
+								<footer id="footer">
+									<div class="inner">
+										<section>
+										<ul class="icons">
+											<li><a href="https://twitter.com/digital_indy" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
+											<li><a href="https://fb.me/indydigitalmarketing" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
+											<li><a href="https://instagram.com/indy_digital" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
+											<li><a href="https://www.linkedin.com/company/indydigital" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
 										</ul>
-									</form>
-								</section>
-								<section class="split">
-									<section>
-										<div class="contact-method">
-											<span class="icon solid alt fa-envelope"></span>
-											<h3>Email</h3>
-											<a href="mailto: contact@indy.digital">contact@indy.digital</a>
-										</div>
+										<ul class="copyright">
+											<li>&copy; Indy Digital</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
+										</ul>
 									</section>
-									<section>
-										<div class="contact-method">
-											<span class="icon solid alt fa-phone"></span>
-											<h3>Phone</h3>
-											<a href="sms: 3173504544">(317) 350-4544</a>
-										</div>
-									</section>
-									<section>
-										<div class="contact-method">
-											<span class="icon solid alt fa-home"></span>
-											<h3>Address</h3>
-											<span>540 Westfield Rd, Noblesville, IN 46060</span>
-										</div>
-									</section>
-								</section>
-							</div>
-						</section>
+									</div>
+								</footer>
 
-					<!-- Footer -->
-						<footer id="footer">
-							<div class="inner">
-								<ul class="icons">
-									<li><a href="https://twitter.com/digital_indy" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
-									<li><a href="https://fb.me/indydigitalmarketing" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
-									<li><a href="https://instagram.com/indy_digital" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-									<li><a href="https://www.linkedin.com/company/indydigital" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-								</ul>
-								<ul class="copyright">
-									<li>&copy; Indy Digital</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li>
-								</ul>
-							</div>
-						</footer>
+						</div>
 
-				</div>
-
-			<!-- Scripts -->
-				<script src="assets/js/jquery.min.js"></script>
-				<script src="assets/js/jquery.scrolly.min.js"></script>
-				<script src="assets/js/jquery.scrollex.min.js"></script>
-				<script src="assets/js/browser.min.js"></script>
-				<script src="assets/js/breakpoints.min.js"></script>
-				<script src="assets/js/util.js"></script>
-				<script src="assets/js/main.js"></script>
-				<!-- Start of HubSpot Embed Code -->
-				  <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/9299123.js"></script>
-				<!-- End of HubSpot Embed Code -->
-		</body>
-	</html>
+					<!-- Scripts -->
+						<script src="assets/js/jquery.min.js"></script>
+						<script src="assets/js/jquery.scrolly.min.js"></script>
+						<script src="assets/js/jquery.scrollex.min.js"></script>
+						<script src="assets/js/browser.min.js"></script>
+						<script src="assets/js/breakpoints.min.js"></script>
+						<script src="assets/js/util.js"></script>
+						<script src="assets/js/main.js"></script>
+						<!-- Start of HubSpot Embed Code -->
+						  <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/9299123.js"></script>
+						<!-- End of HubSpot Embed Code -->
+				</body>
+			</html>
